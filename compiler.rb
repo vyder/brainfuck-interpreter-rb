@@ -20,3 +20,6 @@ brainfuck.split("").each do |char|
 	end
 end
 print "\n"
+
+
+# todo - loops
