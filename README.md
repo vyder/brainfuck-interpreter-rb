@@ -1,1 +1,3 @@
-v 0.1 of ruby brainfuck compiler
+A Brainfuck interpreter written in ruby.
+
+[What is brainfuck?](http://en.wikipedia.org/wiki/Brainfuck)
