@@ -21,5 +21,4 @@ brainfuck.split("").each do |char|
 end
 print "\n"
 
-
 # todo - loops
