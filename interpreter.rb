@@ -1,22 +1,22 @@
 #!/bin/ruby
 
-array = []
-100.times { array << 0 }
+array = Array.new(100, 0)
 
 brainfuck = ARGV[0]
 
-counter = 0
+index = 0
 brainfuck.split("").each do |char|
-	if char == '+'
-		array[counter] += 1
-	elsif char == '-'
-		array[counter] -= 1
-	elsif char == '>'
-		counter += 1
-	elsif char == '<'
-		counter -= 1
-	elsif char == '.'
-		print array[counter].chr
+	case char
+	when '+'
+		array[index] += 1
+	when '-'
+		array[index] -= 1
+	when '>'
+		index += 1
+	when '<'
+		index -= 1
+	when '.'
+		print array[index].chr
 	end
 end
 print "\n"
